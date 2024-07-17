@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Beranda</title>
+    <style>
+        .nav-link.active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 45%;
+            transform: translateY(-50%);
+            text-align: center;
+            animation: slideText 5s linear infinite;
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        .carousel-caption h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            height: auto;
+
+        }
+
+        .carousel-caption h3 {
+            font-size: 4rem;
+            font-weight: bold;
+
+
+        }
+
+        .carousel-item img {
+            height: auto;
+            max-height: 180vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .image-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: rgba(235, 233, 252, 0.501);
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .image-item {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#" style="font-family: 'Montserrat', sans-serif;">
+                <img src="img/logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+                <span class="ms-2 text-white">PRAIKAROKU JANGGA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-right" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" href="profil_desa.html">Profil Desa</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sejarah.html">Sejarah Desa</a></li>
+                            <li><a class="dropdown-item" href="visi.html">Visi Misi</a></li>
+                            <li><a class="dropdown-item" href="lokasi.html">Lokasi dan Geografis</a></li>
+                            <li><a class="dropdown-item" href="hukum.html">Landasan Hukum</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="demografi.html">Demografi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="struktur.html">Struktur Desa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Selesai -->
+
+    <!-- Konten -->
+    <!-- Selamat Datang -->
+    <main role="main" class="container-fluid p-0">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/berandaaa.png" class="d-block" alt="Slide 1">
+                </div>
+            </div>
+        </div>
+
+        <div style="padding: 5%;">
+            <div
+                style="width: 100%; padding: 3%; background-color: rgb(255, 255, 255); border-radius: 29%; box-shadow: 10px 190px 100px rgba(0, 0, 0, 0.1); border: 1cap;">
+                <p align="center"> <i>"Website ini dirancang untuk memudahkan Anda untuk mengetahui informasi terkait
+                        Desa
+                        Praikaroku
+                        Jangga. Jelajahi setiap halaman yang ada, dan temukan informasi yang Anda butuhkan dengan mudah.
+                        "</i>
+                </p>
+            </div>
+            <br>
+            <h4 class="text-center mb-4"><strong>GALERI</strong></h4><br>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="img/kantor desa.jpg" alt="Kantor Desa Praikaroku Jangga" data-bs-toggle="modal"
+                        data-bs-target="#imageModal1">
+                    <p>
+                        <i>Kantor Desa Praikaroku Jangga</i>
+                    </p>
+                </div>
+                <div class="image-item">
+                    <img src="img/Paud Pahomba.jpg" alt="Paud Pahomba" data-bs-toggle="modal"
+                        data-bs-target="#imageModal2">
+                    <p>
+                        <i>TK Kristen Pahomba</i>
+                    </p>
+                </div>
+                <div class="image-item">
+                    <img src="img/pemandangan.jpg" alt="Pemandangan Pegunungan" data-bs-toggle="modal"
+                        data-bs-target="#imageModal3">
+                    <p>
+                        <i>Pemandangan Pegunungan Dusun 1</i>
+                    </p>
+                </div>
+                <div class="image-item">
+                    <img src="img/gunung dusun 2.jpg" alt="Pemandangan Pegunungan Dusun 2" data-bs-toggle="modal"
+                        data-bs-target="#imageModal4">
+                    <p>
+                        <i>Pemandangan Pegunungan Dusun 2</i>
+                    </p>
+                </div>
+                <div class="image-item">
+                    <img src="img/lapangan pacuan.jpg" alt="Lapangan Pacuan Pahomba" data-bs-toggle="modal"
+                        data-bs-target="#imageModal5">
+                    <p>
+                        <i>Lapangan Pacuan Pahomba</i>
+                    </p>
+                </div>
+                <div class="image-item">
+                    <img src="img/Pembagian Blt.jpg" alt="Pembagian Bantuan di Kantor Desa" data-bs-toggle="modal"
+                        data-bs-target="#imageModal6">
+                    <p>
+                        <i>Pembagian Bantuan di Kantor Desa</i>
+                    </p>
+                </div>
+                <div class="image-item">
+                    <img src="img/tanam pohon.jpg"
+                        alt="Penanaman Pohon Umur Panjang DI Dusun 4 Bersama Polsek Lendiwacu" data-bs-toggle="modal"
+                        data-bs-target="#imageModal7">
+                    <p>
+                        <i>Penanaman Pohon Umur Panjang <br> Di Dusun 4 Bersama Polsek Lendiwacu</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main><br><br><br>
+    <!-- Selamat Datang Selesai -->
+    <!-- Konten Tambahan -->
+
+
+    <!-- Konten Tambahan Selesai-->
+
+    <!-- Konten Selesai-->
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <span class="text-white">&copy; 2024 Copy Right | Kelompok 27 KKN UNKRISWINA SUMBA.</span>
+        </div>
+    </footer>
+    <!-- Footer Selesai -->
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal1Label">Kantor Desa Praikaroku Jangga</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/kantor desa.jpg" class="img-fluid" alt="Kantor Desa Praikaroku Jangga">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal2Label">TK Pahomba</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/Paud Pahomba.jpg" class="img-fluid" alt="Paud Pahomba">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal3Label">Pemandangan Pegunungan Dusun 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/pemandangan.jpg" class="img-fluid" alt="Pemandangan Pegunungan">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="imageModal4" tabindex="-1" aria-labelledby="imageModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal4Label">Pemandangan Pegunungan Dusun 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/gunung dusun 2.jpg" class="img-fluid" alt="Pemandangan Pegunungan Dusun 2">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="imageModal5" tabindex="-1" aria-labelledby="imageModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal5Label">Lapangan Pacuan Pahomba</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/lapangan pacuan.jpg" class="img-fluid" alt="Lapangan Pacuan Pahomba">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="imageModal6" tabindex="-1" aria-labelledby="imageModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal5Label">Pembagian Bantuan di Kantor Desa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/Pembagian Blt.jpg" class="img-fluid" alt="Pembagian Bantuan di Kantor Desa">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 7-->
+    <div class="modal fade" id="imageModal7" tabindex="-1" aria-labelledby="imageModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModal5Label">Penanaman Pohon Umur Panjang DI Dusun 4 Bersama Polsek
+                        Lendiwacu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="img/tanam pohon.jpg" class="img-fluid"
+                        alt="Penanaman Pohon Umur Panjang DI Dusun 4 Bersama Polsek Lendiwacu">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
